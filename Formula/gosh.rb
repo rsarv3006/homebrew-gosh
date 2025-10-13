@@ -16,8 +16,12 @@ class Gosh < Formula
   end
 
   def post_install
-    ohai "To use gosh as your default shell, add it to /etc/shells:"
-    ohai "echo '#{bin}/gosh' | sudo tee -a /etc/shells"
-    ohai "Then change your shell with: chsh -s #{bin}/gosh"
+    puts ""
+    ohai "🐚 GOSH SETUP: To use gosh as your login shell:"
+    puts "  echo '#{bin}/gosh' | sudo tee -a /etc/shells"
+    puts "  chsh -s #{bin}/gosh"
+    puts ""
+    ohai "Then run 'gosh' to start your new shell!"
+    puts ""
   end
 end
