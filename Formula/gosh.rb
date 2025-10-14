@@ -24,5 +24,4 @@ class Gosh < Formula
   test do
     assert_match "gosh>", shell_output("#{bin}/gosh -c 'exit' 2>&1")
   end
-  
 end
