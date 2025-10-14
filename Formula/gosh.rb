@@ -2,7 +2,7 @@ class Gosh < Formula
   desc "Hybrid shell combining Go's interpreter with traditional command execution"
   homepage "https://github.com/rsarv3006/gosh"
   url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  sha256 "c452ef7b1e09112b658aea4e134a5a8dbf963744b3d60032907152dda54532f0"
   license "MIT"
 
   depends_on "go" => :build
