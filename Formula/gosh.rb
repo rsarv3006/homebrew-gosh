@@ -1,8 +1,8 @@
 class Gosh < Formula
-  desc "Hybrid shell combining Go's interpreter with traditional command execution"
+  desc "Hybrid shell combining Go's interpreter with traditional command execution with shellapi integration"
   homepage "https://github.com/rsarv3006/gosh"
-  url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c452ef7b1e09112b658aea4e134a5a8dbf963744b3d60032907152dda54532f0"
+  url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "23d38984da4697052afe7bca6ebc99d073e16daaca06794ac9970aa97d2d8872"
   license "MIT"
 
   depends_on "go" => :build
@@ -17,7 +17,13 @@ class Gosh < Formula
     puts "  echo '#{bin}/gosh' | sudo tee -a /etc/shells"
     puts "  chsh -s #{bin}/gosh"
     puts ""
-    ohai "Then run 'gosh' to start your new shell!"
+    ohai "✨ NEW IN v0.2.1: Try 'init' to create config, then use functions like:"
+    puts "  gs()           # Git status with colors"
+    puts "  ok('Done!')    # Green success message" 
+    puts "  build()        # Build project"
+    puts "  shellapi.GitStatus()  # Direct shellapi access"
+    puts ""
+    puts "Then run 'gosh' to start your new shell!"
     puts ""
   end
 
