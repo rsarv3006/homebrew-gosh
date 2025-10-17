@@ -1,8 +1,8 @@
 class Gosh < Formula
   desc "Hybrid shell combining Go's interpreter with traditional command execution with shellapi integration"
   homepage "https://github.com/rsarv3006/gosh"
-  url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "23d38984da4697052afe7bca6ebc99d073e16daaca06794ac9970aa97d2d8872"
+  url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.2.2.zip"
+  sha256 "9164c8b6c2676e2f6bb6165b3a38d677df85d91facc5d0ddd57415180aa98f72"
   license "MIT"
 
   depends_on "go" => :build
@@ -17,13 +17,16 @@ class Gosh < Formula
     puts "  echo '#{bin}/gosh' | sudo tee -a /etc/shells"
     puts "  chsh -s #{bin}/gosh"
     puts ""
-    ohai "✨ NEW IN v0.2.1: Try 'init' to create config, then use functions like:"
-    puts "  gs()           # Git status with colors"
-    puts "  ok('Done!')    # Green success message" 
-    puts "  build()        # Build project"
-    puts "  shellapi.GitStatus()  # Direct shellapi access"
+    ohai "🎉 NEW IN v0.2.2: Working shellapi functions that actually execute commands!"
+    puts "  build()        # Real go build with error feedback"
+    puts "  test()         # Real go test with full output"
+    puts "  run()          # Real go run . execution"
+    puts "  gs()           # Real git status with colors"
+    puts "  goGosh()       # Actually changes directory and persists!"
+    puts "  shellapi.GoBuild()     # Direct access to working functions"
     puts ""
-    puts "Then run 'gosh' to start your new shell!"
+    puts "Functions now execute real commands, not just substitution strings!"
+    puts "Directory changes persist across shell sessions. Try 'gosh' to start!"
     puts ""
   end
 
