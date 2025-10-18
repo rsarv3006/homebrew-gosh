@@ -1,5 +1,5 @@
 class Gosh < Formula
-  desc "Hybrid shell combining Go's interpreter with traditional command execution with shellapi integration"
+  desc "Hybrid shell combining Go's interpreter with traditional command execution"
   homepage "https://github.com/rsarv3006/gosh"
   url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.2.4.tar.gz"
   sha256 "85ca068e0bb5b2816aae204f67358f0c29685ef1db7c874efa5d5b912eb9e267"
