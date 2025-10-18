@@ -18,7 +18,8 @@ class Gosh < Formula
     puts "  chsh -s #{bin}/gosh"
     puts ""
     ohai "🎉 v0.2.4: Sequential directory operations in functions now work!"
-    puts "See https://rsarv3006.github.io/gosh/ for documentation"
+    ohai "See https://rsarv3006.github.io/gosh/ for documentation"
+    puts ""
   end
 
   test do
