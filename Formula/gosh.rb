@@ -1,8 +1,8 @@
 class Gosh < Formula
   desc "Hybrid shell combining Go's interpreter with traditional command execution with shellapi integration"
   homepage "https://github.com/rsarv3006/gosh"
-  url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.2.3.tar.gz"
-  sha256 "ba876cd54255673e8e94a88488c8efdaa01181905b335b3091189d745d509643"
+  url "https://github.com/rsarv3006/gosh/archive/refs/tags/v0.2.4.tar.gz"
+  sha256 "d85f5aeb3cd49c194fff728fc594303af77ffec886d963cc1289a16dbd588af0"
   license "MIT"
 
   depends_on "go" => :build
@@ -17,10 +17,8 @@ class Gosh < Formula
     puts "  echo '#{bin}/gosh' | sudo tee -a /etc/shells"
     puts "  chsh -s #{bin}/gosh"
     puts ""
-    ohai "✨ v0.2.3: Production-ready shellapi functions"
-    puts ""
-    puts "Functions execute real commands, directory changes persist. Start with 'gosh'!"
-    puts ""
+    ohai "🎉 v0.2.4: Sequential directory operations in functions now work!"
+    puts "See https://rsarv3006.github.io/gosh/ for documentation"
   end
 
   test do
